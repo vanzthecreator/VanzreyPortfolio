@@ -47,35 +47,31 @@ export function ContactSection() {
 
           <div className="flex flex-wrap gap-5 justify-center mb-12">
             {SOCIAL.map((s, i) => (
-              <motion.div key={s.name}
+              <motion.a key={s.name} href={s.href} target="_blank" rel="noreferrer"
                 initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ delay: i * 0.1 + 0.3 }}
-                whileHover={{ y: -4 }} data-cursor="hover">
-                <a href={s.href} target="_blank" rel="noreferrer"
-                  className="flex flex-col items-center gap-3 p-7 rounded-2xl glass-card glass-card-hover"
-                  style={{ minWidth: 130, display: 'inline-flex', flexDirection: 'column' }}>
-                  <motion.div style={{ color: '#555' }} whileHover={{ color: s.color, scale: 1.1 }} transition={{ duration: 0.18 }}>
-                    {s.icon}
-                  </motion.div>
-                  <span className="text-sm font-mono" style={{ color: '#444' }}>{s.name}</span>
-                </a>
-              </motion.div>
+                className="flex flex-col items-center gap-3 p-7 rounded-2xl glass-card glass-card-hover cursor-pointer"
+                style={{ minWidth: 130 }} whileHover={{ y: -4 }} data-cursor="hover"
+                onClick={(e) => { e.currentTarget.href && window.open(e.currentTarget.href, '_blank'); }}>
+                <motion.div style={{ color: '#555' }} whileHover={{ color: s.color, scale: 1.1 }} transition={{ duration: 0.18 }}>
+                  {s.icon}
+                </motion.div>
+                <span className="text-sm font-mono" style={{ color: '#444' }}>{s.name}</span>
+              </motion.a>
             ))}
           </div>
 
-          <motion.div
+          <motion.a href="mailto:vanzreyalsado1@gmail.com"
             initial={{ opacity: 0 }} animate={isInView ? { opacity: 1 } : {}} transition={{ delay: 0.6 }}
-            whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
-            <a href="mailto:vanzreyalsado1@gmail.com"
-              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-semibold font-display text-sm text-white"
-              style={{ background: 'linear-gradient(135deg,#5227FF,#B19EEF)', boxShadow: '0 0 30px rgba(82,39,255,0.3)' }}
-              data-cursor="hover">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-              Get in Touch
-            </a>
-          </motion.div>
+            className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full font-semibold font-display text-sm text-white cursor-pointer"
+            style={{ background: 'linear-gradient(135deg,#5227FF,#B19EEF)', boxShadow: '0 0 30px rgba(82,39,255,0.3)' }}
+            whileHover={{ scale: 1.03, boxShadow: '0 0 50px rgba(82,39,255,0.5)' }} whileTap={{ scale: 0.97 }} data-cursor="hover"
+            onClick={(e) => { window.location.href = 'mailto:vanzreyalsado1@gmail.com'; }}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Get in Touch
+          </motion.a>
         </motion.div>
       </div>
     </section>
@@ -98,4 +94,9 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-1.5">
           <div className="w-1.5 h-1.5 rounded-full" style={{ background: '#B19EEF', animation: 'pulse 2s infinite' }} />
-   
+          <span className="text-xs font-mono" style={{ color: '#444' }}>Available for hire</span>
+        </div>
+      </div>
+    </footer>
+  );
+}

@@ -36,13 +36,13 @@ export function ContactSection() {
           </div>
 
           <h2 className="font-display font-bold text-5xl md:text-7xl tracking-tight leading-tight mb-5">
-            <GradientText colors={['#ffffff', '#888888', '#444444']} animationSpeed={10}>Let's work</GradientText>
+            <GradientText colors={['#ffffff', '#888888', '#444444']} animationSpeed={10}>Interested in my</GradientText>
             <br />
-            <span style={{ color: '#1e1e1e' }}>together.</span>
+            <span style={{ color: '#1e1e1e' }}>portfolio?</span>
           </h2>
 
           <p className="text-lg mb-12" style={{ color: '#555' }}>
-            I'm open to collaboration, learning together, and exciting projects! Contact me via social media below.
+            I'd love to hear from you! Get in touch via email or connect with me on social media to discuss portfolio opportunities and collaborations.
           </p>
 
           <div className="flex flex-wrap gap-5 justify-center mb-12">

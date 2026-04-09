@@ -25,8 +25,8 @@ export default function ProjectsSection() {
             <span className="text-xs font-mono tracking-widest uppercase" style={{ color: '#B19EEF' }}>Work</span>
           </div>
           <h2 className="font-display font-bold text-5xl md:text-7xl tracking-tight leading-tight">
-            <GradientText colors={['#ffffff', '#888888', '#444444']} animationSpeed={12}>Selected</GradientText>
-            <span className="ml-3" style={{ color: '#1e1e1e' }}>Projects.</span>
+            <GradientText colors={['#ffffff', '#888888', '#444444']} animationSpeed={12}>Portfolio</GradientText>
+            <span className="ml-3" style={{ color: '#1e1e1e' }}>Work.</span>
           </h2>
         </motion.div>
 

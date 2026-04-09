@@ -77,9 +77,9 @@ export default function AboutSection() {
             <span className="text-xs font-mono tracking-widest uppercase" style={{ color: '#B19EEF' }}>About</span>
           </div>
           <h2 className="font-display font-bold text-5xl md:text-7xl tracking-tight leading-tight">
-            <GradientText colors={['#ffffff', '#888888', '#444444']} animationSpeed={12}>A bit about</GradientText>
+            <GradientText colors={['#ffffff', '#888888', '#444444']} animationSpeed={12}>About this</GradientText>
             <br />
-            <span style={{ color: '#1e1e1e' }}>myself.</span>
+            <span style={{ color: '#1e1e1e' }}>portfolio.</span>
           </h2>
         </motion.div>
 

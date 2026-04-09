@@ -57,13 +57,13 @@ export default function HeroSection() {
         </h1>
 
         <p className="font-mono text-sm tracking-widest uppercase mb-6" style={{ color: '#444' }}>
-          Student · Web Developer · 21 y.o.
+          Portfolio · Web Developer · Student
         </p>
 
         <p ref={subRef} className="opacity-0 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed" style={{ color: '#666' }}>
-          Developing 21 years old students{' '}
-          <GradientText colors={['#B19EEF', '#5227FF', '#FF9FFC']} animationSpeed={4}>A great web experience</GradientText>.
-          {' '}Learn every day, one commit one step forward.
+          Welcome to my personal portfolio showcasing{' '}
+          <GradientText colors={['#B19EEF', '#5227FF', '#FF9FFC']} animationSpeed={4}>modern web projects</GradientText>
+          {' '}built with React, TypeScript, and cutting-edge technologies. Explore my work.
         </p>
 
         <div ref={ctaRef} className="opacity-0 flex flex-wrap gap-4 justify-center">
@@ -71,13 +71,13 @@ export default function HeroSection() {
             className="px-8 py-4 rounded-full font-semibold text-sm font-display text-white"
             style={{ background: 'linear-gradient(135deg, #5227FF, #B19EEF)', boxShadow: '0 0 30px rgba(82,39,255,0.3)' }}
             whileHover={{ scale: 1.04, boxShadow: '0 0 50px rgba(82,39,255,0.5)' }} whileTap={{ scale: 0.97 }} data-cursor="hover">
-            View Projects ↗
+            Explore My Portfolio ↗
           </motion.button>
-          <motion.button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+          <motion.button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 rounded-full font-semibold text-sm font-display"
             style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: '#aaa' }}
             whileHover={{ background: 'rgba(255,255,255,0.1)', color: '#fff', scale: 1.02 }} whileTap={{ scale: 0.97 }} data-cursor="hover">
-            About Me
+            Get in Touch
           </motion.button>
         </div>
 

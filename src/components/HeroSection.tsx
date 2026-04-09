@@ -61,9 +61,7 @@ export default function HeroSection() {
         </p>
 
         <p ref={subRef} className="opacity-0 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed" style={{ color: '#666' }}>
-          Welcome to my personal portfolio showcasing{' '}
-          <GradientText colors={['#B19EEF', '#5227FF', '#FF9FFC']} animationSpeed={4}>modern web projects</GradientText>
-          {' '}built with React, TypeScript, and cutting-edge technologies. Explore my work.
+          Welcome to my portfolio
         </p>
 
         <div ref={ctaRef} className="opacity-0 flex flex-wrap gap-4 justify-center">

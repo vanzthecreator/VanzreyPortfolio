@@ -10,7 +10,7 @@ const ICONS = [
   { label: 'PY',   color: '#4b8bbe', bg: 'rgba(75,139,190,0.15)' },
 ];
 
-const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portfolio';
 
 export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
   const [show, setShow]         = useState(true);
@@ -89,7 +89,16 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
             </span>
           </div>
         </div>
-      )}
+      )}const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+const TEXT = 'Welcome To My Portofolio';
+
     </AnimatePresence>
   );
 }

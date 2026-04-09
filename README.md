@@ -1,52 +1,52 @@
 # 🚀 Portfolio Website
 
-Portfolio website modern milik **Vanz Rey Alsado**, dibangun dengan React, TypeScript, Three.js, GSAP, dan TailwindCSS.
+A modern portfolio website for **Vanz Rey Alsado**, built with React, TypeScript, Three.js, GSAP, and TailwindCSS.
 
 ---
 
-## ⚡ Langkah Install & Jalankan
+## ⚡ Installation & Setup
 
-### Step 1 — Pastikan Node.js sudah terinstall
+### Step 1 — Ensure Node.js is Installed
 ```bash
 node -v
-# Harus muncul v18.x.x atau lebih baru
-# Kalau belum: download di https://nodejs.org
+# Should display v18.x.x or newer
+# If not installed: download from https://nodejs.org
 ```
 
-### Step 2 — Extract zip dan masuk folder
+### Step 2 — Extract the zip and navigate to the folder
 ```bash
 cd portfolio
 ```
 
-### Step 3 — Install semua dependencies (1 command aja!)
+### Step 3 — Install all dependencies
 ```bash
 npm install
 ```
 
-### Step 4 — Jalankan!
+### Step 4 — Start the development server
 ```bash
 npm run dev
 ```
-Buka: **http://localhost:3000** 🎉
+Open: **http://localhost:3000** 🎉
 
 ---
 
-## 📦 Yang Terinstall Otomatis
+## 📦 Included Packages
 
-| Package | Fungsi |
-|---------|--------|
-| react + react-dom | Framework UI |
-| typescript | Type safety |
-| vite | Build tool, dev server port 3000 |
-| three + postprocessing | PixelBlast background WebGL |
-| gsap | Animasi scroll + stagger |
-| motion | Framer Motion animasi |
-| tailwindcss | CSS utility |
-| lucide-react | Icons |
+| Package | Purpose |
+|---------|---------|
+| react + react-dom | UI Framework |
+| typescript | Type Safety |
+| vite | Build tool & dev server (port 3000) |
+| three + postprocessing | PixelBlast WebGL background |
+| gsap | Scroll & stagger animations |
+| motion | Framer Motion animations |
+| tailwindcss | CSS utilities |
+| lucide-react | Icon library |
 
 ---
 
-## 🌐 Deploy Gratis
+## 🌐 Free Deployment
 
 **Vercel (Recommended):**
 ```bash
@@ -55,26 +55,26 @@ vercel login
 vercel
 ```
 
-**Netlify:** build dulu (`npm run build`) lalu drag-drop folder `dist/` ke netlify.com/drop
+**Netlify:** Build first (`npm run build`), then drag-drop the `dist/` folder to netlify.com/drop
 
 ---
 
-## 🎨 Kustomisasi
+## 🎨 Customization
 
-**Ganti foto (9:16):** Taruh foto di `public/foto.jpg`, lalu di `AboutSection.tsx`:
+**Change profile photo (9:16 aspect):** Place your photo in `public/foto.jpg`, then update `AboutSection.tsx`:
 ```tsx
 <TiltCard src="/foto.jpg" alt="Vanz Rey Alsado" className="w-56" style={{ aspectRatio: '9/16' }} />
 ```
 
-**Social links:** Edit `href` di array `SOCIAL` di `ContactSection.tsx`
+**Social media links:** Edit the `href` values in the `SOCIAL` array in `ContactSection.tsx`
 
-**Projects:** Edit array `PROJECTS` di `ProjectsSection.tsx`
+**Projects:** Edit the `PROJECTS` array in `ProjectsSection.tsx`
 
 ---
 
-## Commands
+## Available Commands
 ```bash
-npm run dev      # localhost:3000
-npm run build    # build production
-npm run preview  # preview build
+npm run dev      # Start dev server at localhost:3000
+npm run build    # Build for production
+npm run preview  # Preview production build
 ```
